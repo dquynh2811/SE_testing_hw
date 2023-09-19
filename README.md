@@ -1,18 +1,9 @@
-## Getting Started
+### Mô tả bài toán
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Xác định danh hiệu hoặc tình trạng của một sinh viên dựa vào GPA và điểm của từng môn trong năm học.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Sinh viên được xét cho danh hiệu dựa trên GPA và điểm môn học.
+    - GPA ≥ 3.6 & Không có môn nào dưới C+: Sinh viên xuất sắc
+    - GPA ≥ 3.2 & Không có môn nào dưới C+: Sinh viên giỏi
+    - GPA ≤ 1.6: Cảnh cáo học vụ
+- Có ba kết quả cần xét: Sinh viên xuất sắc, Sinh viên giỏi và Cảnh cáo học vụ.
