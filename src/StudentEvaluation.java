@@ -4,11 +4,14 @@ public class StudentEvaluation {
         if (GPA > 4.0 || GPA < 0) {
             return "Input không hợp lệ";
         }
-        if (GPA >= 3.6 && allGradesAbove(grades)) {
-            return "Sinh viên xuất sắc";
-        } else if (GPA >= 3.2 && allGradesAbove(grades)) {
-            return "Sinh viên giỏi";
-        } else if (GPA < 1.6) {
+        if (allGradesAbove(grades)) {
+            if (GPA >= 3.6) {
+                return "Sinh viên xuất sắc";
+            } else if (GPA >= 3.2) {
+                return "Sinh viên giỏi";
+            }
+        }
+        if (GPA < 1.6) {
             return "Cảnh cáo học vụ";
         }
         return "Không có danh hiệu";
